@@ -2,18 +2,33 @@ import { useEffect, useState } from 'react'
 import Header from './components/header'
 import WordDisplay from './components/word-display'
 import GuessedLetters from './components/guessed-letters'
-import { getRandomWord } from './utils/api'
 import useKeyboard from './hooks/useKeyboard'
+import { getRandomWord } from './utils/api'
+import { checkWord } from './utils/helpers'
+
+let timeoutId
 
 function App() {
   const [loading, setLoading] = useState(true)
-  const [word, setWord] = useState()
+  const [word, setWord] = useState('')
   const [guesses, setGuesses] = useKeyboard()
-  console.log(guesses)
+  const [score, setScore] = useState(0)
 
   useEffect(() => {
-    getWord()
-  }, [])
+    if (!word) {
+      getWord()
+    } else {
+      clearTimeout(timeoutId)
+      timeoutId = setTimeout(() => {
+        const isMatch = checkWord(word, guesses)
+        if (isMatch) {
+          setScore(score + 1)
+          setWord('')
+          setGuesses([])
+        }
+      }, 1000)
+    }
+  }, [guesses])
 
   const getWord = async () => {
     setLoading(true)
@@ -30,7 +45,9 @@ function App() {
 
   return (
     <main className="container">
-      <Header />
+      <Header 
+        score={score}
+      />
       <WordDisplay
         loading={loading} 
         word={word} 

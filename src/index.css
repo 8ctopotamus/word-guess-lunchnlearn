@@ -60,7 +60,7 @@ header {
   padding: 20px;
 }
 
-h1, .lives {
+h1, .lives, #guessed-letters {
   font-size: 1.4rem;
 }
 
@@ -87,6 +87,7 @@ main {
   font-size: 4rem;
   text-align: center;
   margin: 20px;
+  text-shadow: -10px -10px 20px var(--darkPurple);
 }
 
 #guessed-letters {
