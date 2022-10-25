@@ -6,6 +6,7 @@ import { getRandomWord } from './utils/api'
 import useKeyboard from './hooks/useKeyboard'
 
 function App() {
+  const [loading, setLoading] = useState(true)
   const [word, setWord] = useState()
   const [guesses, setGuesses] = useKeyboard()
   console.log(guesses)
@@ -15,23 +16,28 @@ function App() {
   }, [])
 
   const getWord = async () => {
+    setLoading(true)
     try {
       const randWord = await getRandomWord()
       setWord(randWord[0])
       setGuesses([])
     } catch(err) {
       console.log(err)
+    } finally {
+      setLoading(false)
     }
   }
 
   return (
-    <>
+    <main className="container">
       <Header />
-      <main className="container">
-        <WordDisplay word={word} guesses={guesses} />
-        <GuessedLetters guesses={guesses} />
-      </main>
-    </>
+      <WordDisplay
+        loading={loading} 
+        word={word} 
+        guesses={guesses} 
+      />
+      <GuessedLetters guesses={guesses} />
+    </main>
   );
 }
 

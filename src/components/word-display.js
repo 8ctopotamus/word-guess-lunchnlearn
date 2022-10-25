@@ -1,10 +1,16 @@
-const WordDisplay = ({ word = '' }) => {
+import Spinner from './spinner'
+
+const WordDisplay = ({ loading = false, word = '', guesses = [] }) => {
   return (
     <section id="word-display">
-      {word.split('').map((s, i) => {
-        // TODO if letter is in guessed letters
-        return <span key={`${s}-${i}}`}>_</span>
-      })}   
+      {loading ? (
+        <Spinner />
+      ) : (
+        word.split('').map((letter, i) => {
+          const finalLetter = guesses.includes(letter) ? letter : '_'
+          return <span key={`${letter}-${i}}`}>{finalLetter}</span>
+        })
+      )}   
     </section>
   )
 }
