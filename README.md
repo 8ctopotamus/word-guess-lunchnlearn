@@ -1,3 +1,16 @@
+# Word Guess - React Hooks Lunch n' Learn
+
+A word guess game for the "React Hooks Lunch N Learn". 
+
+## Resources:
+* [React Hooks API](https://reactjs.org/docs/hooks-reference.html)
+* [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
+* [usehooks.com](https://usehooks.com/)
+
+Color Scheme: [https://coolors.co/palette/471ca8-884ab2-ff930a-f24b04-d1105a](https://coolors.co/palette/471ca8-884ab2-ff930a-f24b04-d1105a)
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
