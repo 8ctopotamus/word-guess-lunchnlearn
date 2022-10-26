@@ -60,8 +60,16 @@ header {
   padding: 20px;
 }
 
-h1, .lives, #guessed-letters {
-  font-size: 1.4rem;
+h1, #lives span, #guessed-letters {
+  font-size: 1.5rem;
+}
+
+#lives {
+  margin-left: 15px;
+}
+
+#lives span {
+  margin-right: 5px;
 }
 
 #root, main {
