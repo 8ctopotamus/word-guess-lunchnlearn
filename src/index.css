@@ -48,6 +48,19 @@ body {
   background-size: 600% 100%;
 }
 
+button {
+  margin: 40px 0;
+  border-radius: 50px;
+  padding: 20px 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #eee;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -60,8 +73,12 @@ header {
   padding: 20px;
 }
 
-h1, #lives span, #guessed-letters {
+h1 #lives span, #guessed-letters {
   font-size: 1.5rem;
+}
+
+#game-over h2 {
+  font-size: 2.5rem;
 }
 
 #lives {
@@ -82,13 +99,17 @@ main {
   justify-content: center;
 }
 
-#word-display {
+#word-display, #game-over {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 1;
   flex-wrap: wrap;
   font-weight: bold;
+}
+
+#game-over {
+  flex-direction: column;
 }
 
 #word-display span {

@@ -1,14 +1,15 @@
 # Word Guess - React Hooks Lunch n' Learn
 
-A word guess game for the "React Hooks Lunch N Learn" demonstrating `useState`, different uses for `useEffect`, and an example of creating custom Hooks.
+A word guess game for the "React Hooks Lunch N Learn" demonstrating `useState`, different uses for `useEffect`, and an example of creating **custom Hooks**.
 
-## Resources:
+## Useful Links:
 * [React Hooks API](https://reactjs.org/docs/hooks-reference.html)
 * [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
 * [usehooks.com](https://usehooks.com/)
 
 ## Shout-outs
-* [Color Scheme](https://coolors.co/palette/471ca8-884ab2-ff930a-f24b04-d1105a)
+* [Random Word API](https://random-word-api.herokuapp.com/word)
+* [Coolers Color Scheme Generator](https://coolors.co/palette/471ca8-884ab2-ff930a-f24b04-d1105a)
 * [Animated Background Gradient - RedStapler Codepen](https://codepen.io/redstapler/pen/LMyLxP)
 * [Loading.io CSS Spinner](https://loading.io/css/)
 

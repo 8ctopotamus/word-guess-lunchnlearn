@@ -1,6 +1,6 @@
 import Spinner from './spinner'
 
-const WordDisplay = ({ loading = false, word = '', guesses = [] }) => {
+const WordDisplay = ({ lives, loading = false, word = '', guesses = [], setGuesses }) => {
   return (
     <section id="word-display">
       {loading ? (
