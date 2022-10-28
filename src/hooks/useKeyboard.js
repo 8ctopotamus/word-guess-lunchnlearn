@@ -13,7 +13,6 @@ const useKeyboard = () => {
   const handleKeydown = (e) => {
     const key = e.key.toLowerCase()
     if (pattern.test(key) && !guesses.includes(key)) {
-      console.log(key)
       setGuesses([...guesses, key])
     }
   }
