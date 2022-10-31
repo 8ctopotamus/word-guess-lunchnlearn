@@ -12,13 +12,8 @@ function App() {
   return (
     <main className="container">
       <Header />
-      
-      <WordDisplay
-        
-      />
-      <GuessedLetters
-        
-      />
+      <WordDisplay />
+      <GuessedLetters />
     </main>
   );
 }
