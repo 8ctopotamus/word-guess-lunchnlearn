@@ -4,8 +4,8 @@ import WordDisplay from './components/word-display'
 import GuessedLetters from './components/guessed-letters'
 import GameOver from './components/game-over'
 
-const maxLives = 2
-const extraGuesses = 5
+const maxLives = 10
+const extraGuesses = 10
 let timeoutId
 
 function App() {
