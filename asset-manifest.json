@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/word-guess-lunchnlearn/static/css/main.fb0f92fb.css",
+    "main.js": "/word-guess-lunchnlearn/static/js/main.d8f7b25f.js",
+    "static/js/787.d2100f55.chunk.js": "/word-guess-lunchnlearn/static/js/787.d2100f55.chunk.js",
+    "index.html": "/word-guess-lunchnlearn/index.html",
+    "main.fb0f92fb.css.map": "/word-guess-lunchnlearn/static/css/main.fb0f92fb.css.map",
+    "main.d8f7b25f.js.map": "/word-guess-lunchnlearn/static/js/main.d8f7b25f.js.map",
+    "787.d2100f55.chunk.js.map": "/word-guess-lunchnlearn/static/js/787.d2100f55.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb0f92fb.css",
+    "static/js/main.d8f7b25f.js"
+  ]
+}
